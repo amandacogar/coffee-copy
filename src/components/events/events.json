@@ -1,0 +1,24 @@
+{
+    "events": [
+        {
+            "title": "Wine & Paint Wednesdays",
+            "description": "Play trivia with everyone on Tuesday nights. Play trivia with everyone on Tuesday nights. Play trivia with everyone on Tuesday nights. Play trivia with everyone on Tuesday nights.",
+            "link": "https://facebook.com"
+        },
+        {
+            "title": "Thirsty Thursdays",
+            "description": "Play Darts in a tournament on Thursdays. Play Darts in a tournament on Thursdays. Play Darts in a tournament on Thursdays. Play Darts in a tournament on Thursdays.",
+            "link": "https://facebook.com"
+        },
+        {
+            "title": "Open Mic Fridays",
+            "description": "Sing karaoke with your friends on Friday nights. Sing karaoke with your friends on Friday nights. Sing karaoke with your friends on Friday nights. Sing karaoke with your friends on Friday nights.",
+            "link": "https://facebook.com"
+        },
+        {
+            "title": "Live Music Saturdays",
+            "description": "Listen to live bands and dance along on Saturdays. Listen to live bands and dance along on Saturdays. Listen to live bands and dance along on Saturdays.",
+            "link": "https://facebook.com"
+        }
+    ]
+}

@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100;200;300&display=swap");
+
+/*Common Styles*/
+.section {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1f20;
+}
+
+.heading {
+  font-family: "Italiana";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.page-header {
+  padding: 7rem;
+  width: 100%;
+  border-top: 1px solid white;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 25px;
+}
+
+.icons a {
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.fab:hover {
+  color: white;
+}
+/*End of Common Styles*/
+
+/*Navigation*/
+#nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#toggle {
+  color: #fff;
+  font-size: 30px;
+  align-self: flex-end;
+}
+
+#offcanvasNavbar {
+  background-color: black;
+  font-family: "Montserrat";
+}
+
+#close button {
+  background-color: rgba(255, 255, 255, 0.616);
+  font-size: 2rem;
+}
+
+#nav {
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: white;
+  font-size: 22px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+}
+
+.link:hover {
+  text-shadow: 0 0 10px white, 0 0 12px white;
+  color: white;
+}
+
+.link::after {
+  color: white;
+}
+/*End of Navigation*/
+
+/*Home*/
+#landing-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#home-heading {
+  position: absolute;
+  font-size: 13rem;
+  left: 5.5%;
+  top: 11%;
+  width: 30%;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(252, 252, 252), 0 0 82px rgb(255, 255, 255),
+    0 0 92px rgb(255, 255, 255), 0 0 102px rgb(255, 255, 255);
+  visibility: hidden;
+  text-align: left;
+}
+
+#home-heading.change {
+  visibility: visible;
+  transition: visibility 0.5s ease;
+}
+/*End of Home*/
+
+/*About*/
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#about-image {
+  width: 97%;
+  height: 700px;
+}
+
+#our-story {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+#about-heading {
+  font-size: 65px;
+}
+
+#about-paragraph {
+  font-family: "Montserrat";
+  font-size: 22px;
+  width: 40%;
+  padding: 1rem;
+}
+/*End of About*/
+
+/*Menu*/
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#menu-options {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-link {
+  height: 750px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-image {
+  height: 100%;
+  width: 100%;
+}
+
+#bakery,
+#wine {
+  opacity: 0.6;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  font-size: 3rem;
+  font-family: "Montserrat";
+}
+
+.circle:hover {
+  background-color: #1e1f20;
+  border: 1px solid white;
+}
+
+.circle::after {
+  background-color: transparent;
+}
+
+.circle:focus {
+  background-color: #1e1f20;
+  border: 1px solid white;
+}
+/*End of Menu*/
+
+/*Events*/
+#events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#event-body {
+  background-image: url("../components/events/events.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#event-menu-img,
+#event-menu {
+  height: 90%;
+  width: 40%;
+  position: absolute;
+  margin-right: 5rem;
+}
+
+#event-menu {
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#event-menu-heading {
+  font-size: 7rem;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+#event-menu-body {
+  margin-top: 1rem;
+  padding: 3rem;
+  overflow: scroll;
+  width: 100%;
+  height: 70%;
+}
+
+#event-menu-body::-webkit-scrollbar {
+  display: none;
+}
+
+.event {
+  padding: 2rem;
+}
+
+.event-link {
+  color: white;
+  text-decoration: none;
+}
+
+.event-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.event-link:hover .event-title i {
+  visibility: visible;
+}
+
+.event-title {
+  font-family: "Italiana";
+  font-size: 3.4rem;
+}
+
+.event-title i {
+  visibility: hidden;
+  color: white;
+  padding: 7px;
+}
+
+.event-description {
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+/*End of Events*/
+
+/*Merchandise*/
+#merchandise {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
+#merch-body {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+#merch-body::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  margin: 2rem;
+  padding: 1rem;
+  color: white;
+  font-family: "Montserrat";
+  width: 100%;
+  height: 100%;
+}
+
+.item-image {
+  width: 500px;
+  height: 500px;
+}
+
+.item-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 1rem;
+}
+
+.item-description {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+/*End of Merchandise*/
+
+/*Contact*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+}
+
+#contact-info {
+  width: 50%;
+  height: 80%;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 2.8rem;
+  justify-content: space-evenly;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+#contact-info h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  padding: 0 4rem 4rem 4rem;
+  font-family: "Montserrat";
+}
+
+#contact-image {
+  width: 50%;
+}
+
+#contact-info p {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+#contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact-info i {
+  padding: 1rem;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+#hours {
+  color: #fff;
+}
+
+#table-head {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.day {
+  text-align: right;
+}
+
+.time {
+  text-align: left;
+}
+
+#email {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30%;
+  margin: 3rem;
+  font-size: 2.5rem;
+  background-color: #1e1f20;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+#email:hover {
+  text-decoration: underline;
+}
+/*End of Contact*/
+
+/*Responsive*/
+@media (max-width: 1200px) {
+  #about-paragraph {
+    font-size: 20px;
+    width: 50%;
+  }
+  #event-menu {
+    padding: 2rem;
+  }
+  #event-menu-heading {
+    font-size: 5rem;
+  }
+  .event-description {
+    font-size: 1.5rem;
+  }
+  #event-menu-img,
+  #event-menu {
+    width: 60%;
+  }
+  #contact-container {
+    flex-direction: column-reverse;
+  }
+  #contact-image {
+    width: 70%;
+  }
+  #contact-info {
+    width: 60%;
+  }
+  #contact-info p {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 1000px) {
+  #home-heading {
+    font-size: 11rem;
+  }
+  #event-menu-heading {
+    font-size: 4rem;
+  }
+  .event-title {
+    font-size: 2.5rem;
+  }
+  #event-menu-img,
+  #event-menu {
+    width: 70%;
+    margin-right: 0;
+  }
+  #event-body {
+    justify-content: center;
+  }
+  .item-image {
+    width: 450px;
+    height: 450px;
+  }
+  #email {
+    width: 70%;
+  }
+  #contact-info {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  #home-heading {
+    font-size: 9rem;
+  }
+  #our-story {
+    flex-direction: column;
+  }
+  #about-paragraph {
+    width: 70%;
+  }
+  #event-menu-img,
+  #event-menu {
+    width: 80%;
+  }
+  #contact-image {
+    width: 80%;
+  }
+  .item-image {
+    width: 400px;
+    height: 400px;
+  }
+  #contact-info {
+    width: 80%;
+  }
+  #contact-info p {
+    font-size: 2rem;
+  }
+  #hours {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  #home-heading {
+    font-size: 7rem;
+  }
+  #about-heading {
+    font-size: 50px;
+  }
+  #event-menu-img,
+  #event-menu {
+    width: 90%;
+  }
+  #email {
+    width: 90%;
+  }
+  .page-header {
+    padding: 3rem;
+  }
+  .item-image {
+    width: 300px;
+    height: 300px;
+  }
+  #merch-heading,
+  #contact-heading {
+    font-size: 5rem;
+  }
+  .circle {
+    width: 40%;
+    height: 10%;
+    font-size: 20px;
+  }
+  #menu-options {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .menu-link {
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+  #hours {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  #home-heading {
+    font-size: 5rem;
+  }
+  #about-paragraph {
+    font-size: 13px;
+    width: 80%;
+  }
+  #about-heading {
+    font-size: 45px;
+  }
+  .circle {
+    width: 40%;
+    height: 8%;
+    font-size: 20px;
+  }
+  #event-menu-heading {
+    font-size: 3rem;
+  }
+  #contact-image {
+    width: 90%;
+  }
+  #email {
+    font-size: 2rem;
+  }
+  #hours {
+    width: 80%;
+  }
+}
+/*End of Responsive*/
