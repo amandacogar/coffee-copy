@@ -6,17 +6,22 @@ function About() {
   return (
     <>
       <section className="section" id="about">
-        <Image src={image2} alt="" id="about-image" />
         <div id="our-story">
           <h2 className="heading" id="about-heading">
             Our Story
           </h2>
           <p id="about-paragraph">
-            Seven dishes. Six drinks. That's what we started with. Our initial
-            menu was lean but perfectly curated. Our offerings have grown a lot
-            since then, but our commitment to perfection remains.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper
+            ultricies velit, non euismod turpis convallis auctor. Pellentesque
+            sapien ante, hendrerit nec dictum nec, dictum ac lectus. Donec
+            pretium nulla convallis orci eleifend, nec porttitor diam vehicula.
+            Nulla nec tincidunt lorem. Nunc varius enim vel ullamcorper
+            volutpat. Fusce tristique, ex at tristique rhoncus, magna velit
+            maximus metus, id aliquet enim metus sed dui. Praesent et aliquet
+            lacus.
           </p>
         </div>
+        <Image src={image2} alt="" id="about-image" />
       </section>
     </>
   );

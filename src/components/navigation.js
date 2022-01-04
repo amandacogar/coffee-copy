@@ -41,7 +41,7 @@ function Navigation() {
                   Events
                 </Nav.Link>
                 <Nav.Link href="#merchandise" className="link">
-                  Merchandise
+                  Products
                 </Nav.Link>
                 <Nav.Link href="#contact" className="link">
                   Contact

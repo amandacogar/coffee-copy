@@ -62,7 +62,7 @@
 }
 
 #nav {
-  margin-top: 50%;
+  margin-top: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,6 +89,7 @@
 /*End of Navigation*/
 
 /*Home*/
+
 #landing-img {
   width: 100%;
   height: 100%;
@@ -97,10 +98,10 @@
 
 #home-heading {
   position: absolute;
-  font-size: 13rem;
+  font-size: 11rem;
   left: 5.5%;
   top: 11%;
-  width: 30%;
+  width: 35%;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(252, 252, 252), 0 0 82px rgb(255, 255, 255),
     0 0 92px rgb(255, 255, 255), 0 0 102px rgb(255, 255, 255);
@@ -365,35 +366,36 @@
 #contact-info {
   width: 50%;
   height: 80%;
-  margin: 4rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   color: white;
   font-weight: 200;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.1rem;
   justify-content: space-evenly;
   align-items: center;
   letter-spacing: 1px;
 }
 
 #contact-info h3 {
-  font-size: 4rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 200;
-  padding: 0 4rem 4rem 4rem;
+  padding: 0 1rem 1rem 1rem;
   font-family: "Montserrat";
 }
 
 #contact-image {
   width: 50%;
+  height: 100%;
 }
 
 #contact-info p {
   display: flex;
   flex-direction: row;
-  padding: 1.5rem;
+  padding: 1rem;
   align-items: center;
 }
 
@@ -404,19 +406,12 @@
 
 #contact-info i {
   padding: 1rem;
-  font-size: 25px;
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.733);
 }
 
 #hours {
   color: #fff;
-}
-
-#table-head {
-  text-align: center;
-  font-family: "Montserrat";
-  font-size: 3rem;
-  text-transform: uppercase;
 }
 
 .day {
@@ -431,7 +426,7 @@
   border: 1px solid white;
   border-radius: 50%;
   width: 30%;
-  margin: 3rem;
+  margin: 1rem;
   font-size: 2.5rem;
   background-color: #1e1f20;
   padding: 2rem;
@@ -477,7 +472,7 @@
 }
 @media (max-width: 1000px) {
   #home-heading {
-    font-size: 11rem;
+    font-size: 10rem;
   }
   #event-menu-heading {
     font-size: 4rem;
@@ -513,6 +508,14 @@
   }
   #about-paragraph {
     width: 70%;
+  }
+  .menu-link {
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+  .circle {
+    width: 30%;
+    height: 10%;
   }
   #event-menu-img,
   #event-menu {
@@ -570,12 +573,8 @@
     align-items: center;
     width: 100%;
   }
-  .menu-link {
-    margin-bottom: 2rem;
-    width: 70%;
-  }
   #hours {
-    width: 70%;
+    width: 90%;
   }
 }
 @media (max-width: 400px) {

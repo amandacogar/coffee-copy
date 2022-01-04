@@ -10,7 +10,7 @@ function Merchandise() {
       <section className="section" id="merchandise">
         <div className="page-header">
           <h2 className="heading" id="merch-heading">
-            Merchandise
+            Products
           </h2>
         </div>
         <div id="merch-body">
