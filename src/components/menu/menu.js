@@ -1,8 +1,8 @@
 import React from "react";
 import { Image, Button } from "react-bootstrap";
-import bakery from "./bakery.avif";
-import coffee from "./coffee.avif";
-import wine from "./wine.avif";
+import bakery from "./bakery.jpg";
+import coffee from "./coffee.jpg";
+import wine from "./wine.jpg";
 import menu from "./menu.pdf";
 function Menu() {
   const openMenu = (e) => {

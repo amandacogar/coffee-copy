@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Container, Button, Table } from "react-bootstrap";
-import contactImg from "./contact.avif";
+import contactImg from "./contact.jpg";
 
 function Contact() {
   return (

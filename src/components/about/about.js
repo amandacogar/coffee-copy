@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import image2 from "./about.avif";
+import image2 from "./about.jpg";
 
 function About() {
   return (

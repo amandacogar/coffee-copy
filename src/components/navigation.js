@@ -1,30 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Navigation() {
-  const handleSelection = (e) => {
-    setTimeout(() => {
-      document.querySelector("#offcanvasNavbar").classList.remove("show");
-      document.querySelector(".fade").classList.remove("show");
-    }, 1000);
-  };
+  const [show, setShow] = useState(false);
+  const handleClose = setTimeout(() => {
+    setShow(false);
+  }, 2750);
+  const handleShow = () => setShow(true);
 
   return (
     <>
-      <Navbar
-        bg="black"
-        expand={false}
-        variant="dark"
-        sticky="top"
-        onSelect={handleSelection}
-      >
+      <Navbar bg="black" expand={false} variant="dark" sticky="top">
         <Container fluid id="nav-container">
-          <Navbar.Toggle aria-controls="offcanvasNavbar" id="toggle" />
+          <Navbar.Toggle
+            aria-controls="offcanvasNavbar"
+            id="toggle"
+            onClick={handleShow}
+          />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
+            show={show}
+            onHide={handleClose}
           >
             <Offcanvas.Header id="close" closeButton></Offcanvas.Header>
             <Offcanvas.Body>
@@ -36,6 +35,7 @@ function Navigation() {
                   spy={true}
                   smooth={true}
                   offset={-10}
+                  onClick={handleClose}
                 >
                   Home
                 </Nav.Link>
