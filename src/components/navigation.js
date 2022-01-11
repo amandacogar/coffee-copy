@@ -4,20 +4,17 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 function Navigation() {
   const [show, setShow] = useState(false);
-  const handleClose = setTimeout(() => {
-    setShow(false);
-  }, 2750);
+  const handleClose = () =>
+    setTimeout(() => {
+      setShow(false);
+    }, 2750);
   const handleShow = () => setShow(true);
 
   return (
     <>
       <Navbar bg="black" expand={false} variant="dark" sticky="top">
         <Container fluid id="nav-container">
-          <Navbar.Toggle
-            aria-controls="offcanvasNavbar"
-            id="toggle"
-            onClick={handleShow}
-          />
+          <Navbar.Toggle onClick={handleShow} id="toggle" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -46,6 +43,7 @@ function Navigation() {
                   spy={true}
                   smooth={true}
                   offset={-10}
+                  onClick={handleClose}
                 >
                   About
                 </Nav.Link>
@@ -56,6 +54,7 @@ function Navigation() {
                   spy={true}
                   smooth={true}
                   offset={-10}
+                  onClick={handleClose}
                 >
                   Menus
                 </Nav.Link>
@@ -66,6 +65,7 @@ function Navigation() {
                   spy={true}
                   smooth={true}
                   offset={-10}
+                  onClick={handleClose}
                 >
                   Events
                 </Nav.Link>
@@ -76,6 +76,7 @@ function Navigation() {
                   spy={true}
                   smooth={true}
                   offset={-10}
+                  onClick={handleClose}
                 >
                   Products
                 </Nav.Link>
@@ -86,6 +87,7 @@ function Navigation() {
                   spy={true}
                   smooth={true}
                   offset={-10}
+                  onClick={handleClose}
                 >
                   Contact
                 </Nav.Link>
