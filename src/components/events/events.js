@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Image, Container } from "react-bootstrap";
-import eventImg from "./event-menu.png";
+import eventImg from "./event-menu.avif";
 import events from "./events.json";
 import EventList from "./event-list.js";
 
@@ -15,7 +15,12 @@ function Events() {
           </h2>
         </div>
         <div id="event-body">
-          <Image src={eventImg} alt="" fluid id="event-menu-img" />
+          <Image
+            src={eventImg}
+            alt="wine glasses clinking their glass in a toast at the local wine bar"
+            fluid
+            id="event-menu-img"
+          />
           <Container fluid id="event-menu">
             <h3 className="heading" id="event-menu-heading">
               Coming Up

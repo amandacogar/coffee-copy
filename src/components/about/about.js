@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import image2 from "./about.jpg";
+import image2 from "./about.avif";
 
 function About() {
   return (
@@ -21,7 +21,7 @@ function About() {
             lacus.
           </p>
         </div>
-        <Image src={image2} alt="" id="about-image" />
+        <Image src={image2} alt="vintage bakery circa 1908" id="about-image" />
       </section>
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Container, Button, Table } from "react-bootstrap";
-import contactImg from "./contact.jpg";
+import contactImg from "./contact.avif";
 
 function Contact() {
   return (
@@ -61,7 +61,11 @@ function Contact() {
               </a>
             </div>
           </div>
-          <Image src={contactImg} alt="" id="contact-image" />
+          <Image
+            src={contactImg}
+            alt="victorian women talking on the phone, reading, and cleaning their guns"
+            id="contact-image"
+          />
         </Container>
       </section>
     </>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Navigation() {
   const handleSelection = (e) => {
@@ -28,22 +29,64 @@ function Navigation() {
             <Offcanvas.Header id="close" closeButton></Offcanvas.Header>
             <Offcanvas.Body>
               <Nav id="nav" className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#home" className="link">
+                <Nav.Link
+                  as={Link}
+                  to="home"
+                  className="link"
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                >
                   Home
                 </Nav.Link>
-                <Nav.Link href="#about" className="link">
+                <Nav.Link
+                  as={Link}
+                  to="about"
+                  className="link"
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                >
                   About
                 </Nav.Link>
-                <Nav.Link href="#menu" className="link">
+                <Nav.Link
+                  as={Link}
+                  to="menu"
+                  className="link"
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                >
                   Menus
                 </Nav.Link>
-                <Nav.Link href="#events" className="link">
+                <Nav.Link
+                  as={Link}
+                  to="events"
+                  className="link"
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                >
                   Events
                 </Nav.Link>
-                <Nav.Link href="#merchandise" className="link">
+                <Nav.Link
+                  as={Link}
+                  to="merchandise"
+                  className="link"
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                >
                   Products
                 </Nav.Link>
-                <Nav.Link href="#contact" className="link">
+                <Nav.Link
+                  as={Link}
+                  to="contact"
+                  className="link"
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                >
                   Contact
                 </Nav.Link>
                 <div className="icons">
