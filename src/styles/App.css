@@ -86,6 +86,7 @@ html {
 .link:hover {
   text-shadow: 0 0 10px white, 0 0 12px white;
   color: white;
+  cursor: pointer;
 }
 
 .link::after {
@@ -340,6 +341,7 @@ html {
 .item-image {
   width: 500px;
   height: 500px;
+  filter: grayscale(100%);
 }
 
 .item-title {
