@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
-import MerchList from "./merch-list.js";
 import items from "./merchandise.json";
+import MerchList from "./merch-list";
 
 function Merchandise() {
-  const [data, setData] = useState(items.items);
+  const [products, setProducts] = useState(items.items);
   return (
     <>
       <section className="section" id="merchandise">
@@ -14,7 +13,7 @@ function Merchandise() {
           </h2>
         </div>
         <div id="merch-body">
-          {data.map((item, i) => (
+          {products.map((item, i) => (
             <MerchList data={item} key={i} />
           ))}
         </div>

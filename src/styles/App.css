@@ -10,6 +10,8 @@ html {
   width: 100%;
   height: 100vh;
   background-color: #1e1f20;
+  font-family: "Montserrat";
+  overflow: hidden;
 }
 
 .heading {
@@ -58,7 +60,6 @@ html {
 
 #offcanvasNavbar {
   background-color: black;
-  font-family: "Montserrat";
 }
 
 #close button {
@@ -110,7 +111,7 @@ html {
   font-size: 11rem;
   left: 5.5%;
   top: 11%;
-  width: 35%;
+  width: 40%;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(252, 252, 252), 0 0 82px rgb(255, 255, 255),
     0 0 92px rgb(255, 255, 255), 0 0 102px rgb(255, 255, 255);
@@ -153,7 +154,6 @@ html {
 }
 
 #about-paragraph {
-  font-family: "Montserrat";
   font-size: 22px;
   width: 40%;
   padding: 1rem;
@@ -173,17 +173,17 @@ html {
   height: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   position: relative;
 }
 
 .menu-link {
   height: 750px;
-  width: 33%;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0rem 2rem 4rem 2rem;
 }
 
 .menu-image {
@@ -196,31 +196,164 @@ html {
   opacity: 0.6;
 }
 
-.circle {
+a.circle {
   border-radius: 50%;
   border: 1px solid white;
   background-color: transparent;
-  width: 20%;
-  height: 30%;
+  width: 200px;
+  height: 200px;
   position: absolute;
   font-size: 3rem;
-  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.circle:hover {
+a.circle:hover {
   background-color: #1e1f20;
   border: 1px solid white;
 }
 
-.circle::after {
+a.circle::after {
   background-color: transparent;
 }
 
-.circle:focus {
+a.circle:focus {
   background-color: #1e1f20;
   border: 1px solid white;
 }
 /*End of Menu*/
+
+/*Wine*/
+#logo {
+  text-align: center;
+  padding: 3rem;
+  margin: 0% 5%;
+}
+
+#wine-menu {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1e1f20;
+  background-image: url("../components/menu/CoffeeShopDesign.png");
+  background-size: contain;
+  background-position: bottom right -650px;
+  background-repeat: no-repeat;
+}
+
+.menu-p {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  padding: 0rem 3rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  padding: 4rem;
+  color: #fff;
+  margin-left: 8rem;
+}
+
+.category h2 {
+  font-family: "Italiana";
+  letter-spacing: 3px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+.menu-item-description {
+  font-size: 2.2rem;
+  word-wrap: break-word;
+  width: 60%;
+  letter-spacing: 1px;
+}
+
+.item-price {
+  font-size: 1.8rem;
+}
+/*End of Wine*/
+
+/*Coffee*/
+#coffee-menu {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1e1f20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-category {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  padding: 4rem;
+  color: #fff;
+}
+
+#coffee-menu img {
+  height: 500px;
+  width: 500px;
+  margin: 50px 0;
+}
+/*End of Coffee*/
+
+/*Eats*/
+#eats-menu {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1e1f20;
+  display: flex;
+  flex-direction: column;
+}
+
+.eats-category {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  padding: 4rem;
+  color: #fff;
+}
+
+.eats-category h2 {
+  font-family: "Italiana";
+  letter-spacing: 3px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#eats-menu-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#menu-photo {
+  height: 100%;
+  width: 750px;
+  position: absolute;
+  left: -300px;
+}
+
+/*End of Eats*/
 
 /*Events*/
 #events {
@@ -238,7 +371,7 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
 }
 
@@ -247,7 +380,6 @@ html {
   height: 90%;
   width: 40%;
   position: absolute;
-  margin-right: 5rem;
 }
 
 #event-menu {
@@ -306,7 +438,6 @@ html {
 }
 
 .event-description {
-  font-family: "Montserrat";
   font-size: 2rem;
 }
 /*End of Events*/
@@ -317,6 +448,7 @@ html {
   flex-direction: column;
   padding-bottom: 6rem;
   width: 100%;
+  height: 100%;
 }
 
 #merch-body {
@@ -333,9 +465,8 @@ html {
   margin: 2rem;
   padding: 1rem;
   color: white;
-  font-family: "Montserrat";
-  width: 100%;
   height: 100%;
+  width: 500px;
 }
 
 .item-image {
@@ -394,7 +525,6 @@ html {
   letter-spacing: 2px;
   font-weight: 200;
   padding: 0 1rem 1rem 1rem;
-  font-family: "Montserrat";
 }
 
 #contact-image {
@@ -449,10 +579,27 @@ html {
 /*End of Contact*/
 
 /*Responsive*/
+@media (max-width: 1500px) {
+  #menu-photo {
+    visibility: hidden;
+  }
+}
 @media (max-width: 1200px) {
   #about-paragraph {
     font-size: 20px;
     width: 50%;
+  }
+  #menu-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-link {
+    height: 650px;
+    width: 750px;
+    margin-bottom: 2rem;
+  }
+  .category {
+    width: 600px;
   }
   #event-menu {
     padding: 2rem;
@@ -484,6 +631,12 @@ html {
   #home-heading {
     font-size: 10rem;
   }
+  .category {
+    width: 500px;
+  }
+  .eats-category {
+    width: 90%;
+  }
   #event-menu-heading {
     font-size: 4rem;
   }
@@ -510,6 +663,12 @@ html {
   }
 }
 @media (max-width: 800px) {
+  #home {
+    height: 100%;
+  }
+  #landing-img {
+    height: 700px;
+  }
   #home-heading {
     font-size: 9rem;
   }
@@ -519,13 +678,27 @@ html {
   #about-paragraph {
     width: 70%;
   }
+  #about-image {
+    height: 650px;
+  }
   .menu-link {
-    margin-bottom: 2rem;
     width: 90%;
   }
   .circle {
     width: 30%;
     height: 10%;
+  }
+  #wine-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .category {
+    margin-left: 0rem;
+  }
+  .coffee-category {
+    width: 85%;
   }
   #event-menu-img,
   #event-menu {
@@ -552,8 +725,36 @@ html {
   #home-heading {
     font-size: 7rem;
   }
+  #landing-img {
+    height: 500px;
+  }
   #about-heading {
     font-size: 50px;
+  }
+  #about-image {
+    height: 450px;
+  }
+  .menu-link {
+    height: 550px;
+  }
+  #logo {
+    font-size: 6rem;
+  }
+  .menu-p {
+    font-size: 3rem;
+  }
+  .category {
+    width: 90%;
+  }
+  .category h2 {
+    text-align: center;
+  }
+  #coffee-menu img {
+    width: 300px;
+    height: 300px;
+  }
+  .menu-item-description {
+    font-size: 1.9rem;
   }
   #event-menu-img,
   #event-menu {
